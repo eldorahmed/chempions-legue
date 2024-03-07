@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
+
+@font-face {
+  font-display: swap;
+  font-family: "Grand Hotel";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/grand-hotel-v19-latin-regular.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.container {
+  text-align: center;
+  color: #333;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin-bottom: 100px;
+  font-family: "Red Hat Text";
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 90px;
+}
+
+p {
+  color: #333;
+  max-width: 310px;
+  line-height: 24px;
+  padding: 15px;
+}
+
+a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  transition: 0.5s;
+  &:hover {
+    background-color: black;
+
+    box-shadow: 6px 6px 0 rgb(85, 137, 7);
+    transform: scale(1.2);
+  }
+}
+
+.blank,
+.other {
+  width: 100%;
+  min-height: 10px;
+  background-color: #333;
+}
+
+.second {
+  text-align: center;
+  color: #333;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(../img/ball.jpg);
+  background-attachment: fixed;
+  height: 900px;
+}
+.third {
+  text-align: center;
+  color: #333;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(../img/cup.jpg);
+  background-attachment: fixed;
+  height: 900px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.card > a {
+  margin-bottom: 25px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  max-width: 320px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  transition: 0.7s;
+}
+
+.img {
+  width: 90%;
+  height: 200px;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.img-first {
+  background-image: url(../img/ronaldo.jpg);
+}
+.img-first-3 {
+  background-image: url(../img/real.jpg);
+}
+
+.img-second {
+  background-image: url(../img/messi.jpg);
+}
+.img-second-3 {
+  background-image: url(../img/chelsea.jpg);
+}
+
+.img-third {
+  background-image: url(../img/salah.jpg);
+}
+.img-third-3 {
+  background-image: url(../img/leverpul.jpg);
+}
+
+.hero-text {
+  color: whitesmoke;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.secondary-title {
+  font-size: 80px;
+  margin-top: 0;
+  font-family: "Red Hat Text";
+  color: whitesmoke;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+.item:hover {
+  transform: scale(1.1);
+}
+.home-btn {
+  margin-bottom: 60px;
+  width: 180px;
+  background: whitesmoke;
+  color: #333;
+  border: 1px solid transparent;
+  &:hover {
+    color: whitesmoke;
+    border: 1px solid white;
+  }
+}
+.last-blank {
+  height: 70px;
+}
