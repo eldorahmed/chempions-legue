@@ -74,11 +74,31 @@ a {
 
 .blank,
 .other {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  min-height: 10px;
-  background-color: #333;
+  min-height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4)
+  
+  
 }
-
+.bg__title{
+  margin-bottom: 50px;
+  max-width: 1200px;
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+}
+.bg__video-first{
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
 .second {
   text-align: center;
   color: #333;
@@ -104,6 +124,7 @@ a {
     url(../img/cup.jpg);
   background-attachment: fixed;
   height: 900px;
+  background-color: rgba(0, 0, 0, 0.4)
 }
 
 h3 {
@@ -178,6 +199,7 @@ h3 {
   transform: scale(1.1);
 }
 .home-btn {
+  text-align: center;
   margin-bottom: 60px;
   width: 180px;
   background: whitesmoke;
@@ -188,6 +210,4 @@ h3 {
     border: 1px solid white;
   }
 }
-.last-blank {
-  height: 70px;
-}
+
